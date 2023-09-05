@@ -60,3 +60,6 @@ emails = "ahmad@gmail.com;  anisa@yahoo.com;  hanif@hotmail.com"
 # print(emails.split(';')[2].split('@')[1])
 print(emails.split(';')[1].strip())
 
+name = 'Abdulateef'
+
+print(name[:5])
