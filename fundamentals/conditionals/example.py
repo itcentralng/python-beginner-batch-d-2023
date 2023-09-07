@@ -1,31 +1,31 @@
-num1 = 5
-num2 = 10
+# num1 = 5
+# num2 = 10
 
-if num2 > num1:
-    print(num1)
-    print(num2)
+# if num2 > num1:
+#     print(num1)
+#     print(num2)
 
-database = {
-    'ahmad@email.com':{'name':'Ahmad', 'password':'password'},
-    'abdul@email.com':{'name':'Abdul', 'password':'passwordx'},
-    'umar@email.com':{'name':'Umar', 'password':'passwordx1'},
-    }
+# database = {
+#     'ahmad@email.com':{'name':'Ahmad', 'password':'password'},
+#     'abdul@email.com':{'name':'Abdul', 'password':'passwordx'},
+#     'umar@email.com':{'name':'Umar', 'password':'passwordx1'},
+#     }
 
-email = input('Enter your email: ')
+# email = input('Enter your email: ')
 
-if email in database:
-    password = input('Please enter your password: ')
-    if database.get(email).get('password') == password:
-        print('Welcome '+database.get(email).get('name'))
+# if email in database:
+#     password = input('Please enter your password: ')
+#     if database.get(email).get('password') == password:
+#         print('Welcome '+database.get(email).get('name'))
 
-elif 2 < 1:
-    print('Never gonna be reached')
+# elif 2 < 1:
+#     print('Never gonna be reached')
 
-elif 1 > 2:
-    print('Invalid Email')
+# elif 1 > 2:
+#     print('Invalid Email')
 
-else:
-    print('Nothing else happend')
+# else:
+#     print('Nothing else happend')
 
 # Exercise
 # Check from a list of fruits if 'Banana' is included
@@ -46,6 +46,25 @@ else:
 # password is correct notify them that their 
 # email is wrong. If neither are correct
 # tell them their credentials are invalid
+
+reg_name = input("Please tell us your name: ")
+reg_email = input("Whats your email: ")
+reg_password = input("Choose a password: ")
+
+# Store the user in the database
+user = {'email':reg_email, 'password':reg_password, 'name':reg_name}
+
+login_email = input("Enter your email: ")
+login_password = input("Enter your password: ")
+
+if (login_email == user.get('email')) and (login_password == user.get("password")):
+    print("Hi {}, welcome to Facebook!".format(user.get("name")))
+elif (login_email == user.get('email')) and (login_password != user.get("password")):
+    print('Wrong password')
+elif (login_email != user.get('email') and login_password == user.get('password')):
+    print('Wrong email')
+else:
+    print('Invalid Credentials')
 #Q1:
 # Write a program that takes a number as input 
 # from the user and prints "Positive" if the 
@@ -69,3 +88,11 @@ else:
 # input from the user (e.g. "A", "B", "C", "D", "F") 
 # and prints "Pass" if the grade is "A", "B", or "C", 
 # and "Fail" if the grade is "D" or "F".
+
+grade = input("Enter your Grade: ")
+pass_g = ["a", "b", "c"]
+fail_g = ["d", "f"]
+if grade.lower() in pass_g:
+    print("Pass")
+elif grade.lower() in fail_g:
+    print("Fail")
