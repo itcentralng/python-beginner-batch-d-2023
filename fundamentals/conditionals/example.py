@@ -1,98 +1,131 @@
-# num1 = 5
-# num2 = 10
+# # num1 = 5
+# # num2 = 10
 
-# if num2 > num1:
-#     print(num1)
-#     print(num2)
+# # if num2 > num1:
+# #     print(num1)
+# #     print(num2)
 
-# database = {
-#     'ahmad@email.com':{'name':'Ahmad', 'password':'password'},
-#     'abdul@email.com':{'name':'Abdul', 'password':'passwordx'},
-#     'umar@email.com':{'name':'Umar', 'password':'passwordx1'},
-#     }
+# # database = {
+# #     'ahmad@email.com':{'name':'Ahmad', 'password':'password'},
+# #     'abdul@email.com':{'name':'Abdul', 'password':'passwordx'},
+# #     'umar@email.com':{'name':'Umar', 'password':'passwordx1'},
+# #     }
 
-# email = input('Enter your email: ')
+# # email = input('Enter your email: ')
 
-# if email in database:
-#     password = input('Please enter your password: ')
-#     if database.get(email).get('password') == password:
-#         print('Welcome '+database.get(email).get('name'))
+# # if email in database:
+# #     password = input('Please enter your password: ')
+# #     if database.get(email).get('password') == password:
+# #         print('Welcome '+database.get(email).get('name'))
 
-# elif 2 < 1:
-#     print('Never gonna be reached')
+# # elif 2 < 1:
+# #     print('Never gonna be reached')
 
-# elif 1 > 2:
-#     print('Invalid Email')
+# # elif 1 > 2:
+# #     print('Invalid Email')
 
+# # else:
+# #     print('Nothing else happend')
+
+# # Exercise
+# # Check from a list of fruits if 'Banana' is included
+# # If it is, print 'Yummy!' otherwise, print 'Ooops!'
+
+# # Exercise 2
+# # Q0:
+# # Write a program that simulates a website
+# # Users should be allowed to register
+# # They should then be allowed to login
+# # With their email and password
+# # If their email is correct and their password
+# # is also correct, the website should welcome
+# # them by their names.
+# # If their email is correct and their password
+# # is not, notify them that their password is 
+# # wrong. If thier email is wrong but their 
+# # password is correct notify them that their 
+# # email is wrong. If neither are correct
+# # tell them their credentials are invalid
+
+# reg_name = input("Please tell us your name: ")
+# reg_email = input("Whats your email: ")
+# reg_password = input("Choose a password: ")
+
+# # Store the user in the database
+# user = {'email':reg_email, 'password':reg_password, 'name':reg_name}
+
+# login_email = input("Enter your email: ")
+# login_password = input("Enter your password: ")
+
+# if (login_email == user.get('email')) and (login_password == user.get("password")):
+#     print("Hi {}, welcome to Facebook!".format(user.get("name")))
+# elif (login_email == user.get('email')) and (login_password != user.get("password")):
+#     print('Wrong password')
+# elif (login_email != user.get('email') and login_password == user.get('password')):
+#     print('Wrong email')
 # else:
-#     print('Nothing else happend')
-
-# Exercise
-# Check from a list of fruits if 'Banana' is included
-# If it is, print 'Yummy!' otherwise, print 'Ooops!'
-
-# Exercise 2
-# Q0:
-# Write a program that simulates a website
-# Users should be allowed to register
-# They should then be allowed to login
-# With their email and password
-# If their email is correct and their password
-# is also correct, the website should welcome
-# them by their names.
-# If their email is correct and their password
-# is not, notify them that their password is 
-# wrong. If thier email is wrong but their 
-# password is correct notify them that their 
-# email is wrong. If neither are correct
-# tell them their credentials are invalid
-
-reg_name = input("Please tell us your name: ")
-reg_email = input("Whats your email: ")
-reg_password = input("Choose a password: ")
-
-# Store the user in the database
-user = {'email':reg_email, 'password':reg_password, 'name':reg_name}
-
-login_email = input("Enter your email: ")
-login_password = input("Enter your password: ")
-
-if (login_email == user.get('email')) and (login_password == user.get("password")):
-    print("Hi {}, welcome to Facebook!".format(user.get("name")))
-elif (login_email == user.get('email')) and (login_password != user.get("password")):
-    print('Wrong password')
-elif (login_email != user.get('email') and login_password == user.get('password')):
-    print('Wrong email')
-else:
-    print('Invalid Credentials')
+#     print('Invalid Credentials')
 #Q1:
 # Write a program that takes a number as input 
 # from the user and prints "Positive" if the 
 # number is greater than zero, "Negative" if 
 # the number is less than zero, and "Zero" if 
 # the number is equal to zero.
+
+# number = int(input("Enter a number: "))
+# if number > 0:
+#     print("Positive")
+# elif number < 0:
+#     print("Negative")
+# else:
+#     print('Zero')
+
+
 #Q2:
 # Write a program that takes two numbers 
 # as input from the user and prints the larger number.
+
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+
+# if num1 < num2:
+#     print(num2)
+# else:
+#     print(num1)
+
 #Q3: 
 # Write a program that takes a string as input 
 # from the user and checks if the string starts 
 # with the letter "a". If it does, print "Starts with 'a'", 
 # otherwise print "Does not start with 'a'".
+
+# name = input("Enter your name: ")
+# if name.lower().startswith('a'):
+#     print('Starts with "a"')
+# else:
+#     print('Does not start with "a"')
+
 #Q4:
 # Write a program that takes a number as input 
 # from the user and checks if the number is even or odd. 
 # If it is even, print "Even", otherwise print "Odd".
+
+num3 = int(input("Enter a number: "))
+if (num3 % 2) == 0:
+    print('Even')
+else:
+    print("Odd")
+
 # Q5:
 # Write a program that takes a grade as 
 # input from the user (e.g. "A", "B", "C", "D", "F") 
 # and prints "Pass" if the grade is "A", "B", or "C", 
 # and "Fail" if the grade is "D" or "F".
 
-grade = input("Enter your Grade: ")
-pass_g = ["a", "b", "c"]
-fail_g = ["d", "f"]
-if grade.lower() in pass_g:
-    print("Pass")
-elif grade.lower() in fail_g:
-    print("Fail")
+# grade = input("Enter your Grade: ")
+# pass_g = ["a", "b", "c"]
+# fail_g = ["d", "f"]
+# if grade.lower() in pass_g:
+#     print("Pass")
+# elif grade.lower() in fail_g:
+#     print("Fail")
