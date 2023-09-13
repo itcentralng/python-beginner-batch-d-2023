@@ -110,11 +110,11 @@
 # from the user and checks if the number is even or odd. 
 # If it is even, print "Even", otherwise print "Odd".
 
-num3 = int(input("Enter a number: "))
-if (num3 % 2) == 0:
-    print('Even')
-else:
-    print("Odd")
+# num3 = int(input("Enter a number: "))
+# if (num3 % 2) == 0:
+#     print('Even')
+# else:
+#     print("Odd")
 
 # Q5:
 # Write a program that takes a grade as 
@@ -129,3 +129,87 @@ else:
 #     print("Pass")
 # elif grade.lower() in fail_g:
 #     print("Fail")
+
+# Q6: 
+# Check from a list of numbers if a float is found
+# Remove it and return the result of multiplying
+# it by 10.
+
+# Pseducode:
+# 1. Create a list of numbers
+# 2. Check the list of numbers if there's a float
+# 3. If a float is found -
+#       - remove the float from the list
+#       - store it somewhere
+#       - multiply it by 10
+#       - print the result of the multiplication
+
+# list_of_numbers = [1, 2, 2.5, 10, 16]
+# our_float = 2.5
+# our_float_position = 2
+# if our_float in list_of_numbers:
+#     the_stored_float = list_of_numbers.pop(2)
+#     result = the_stored_float * 10
+#     print(result)
+
+# Q7
+# Check from a list if the number 5 is found
+# if so, then remove the last item from the list and show
+# the result of multiplying the removed item by 10 if the
+# removed item is a number or if it can be converted to a number.
+
+# PseudoCode:
+# 1. Create a list
+# 2. Check if the number 5 is found in the list
+# 3. If it is found:
+#       - Remove the last item from the list
+#       - Store the remove item
+#       - Check if the item is a number or it can be converted
+#       - If that's so:
+#           - Multiply the remove item by 10 and print the result
+
+# a_list = [1, 2, 3, 4, 5, 6, 7, 8]
+# if 5 in a_list:
+#     stored_item = a_list.pop()
+#     if type(stored_item) == int or stored_item.is_digit():
+#         print(int(stored_item) * 10)
+
+
+# Pseudocode:
+# 1. Create a list
+# 2. Check if the number 5 is in the list
+# 3. If the number 5 is found:
+#       - Remove the last item from the list
+#       - Store the removed item
+#       - Check if the stored item is a number or it can be converted to a number
+#       - Show the result of multiplying the stored item by 10
+
+# our_list = ["Alameen", 3, 5, "1.4", "Abdulateef", 16]
+# if 5 in our_list:
+#     stored_item = our_list.pop()
+#     if type(stored_item) == int or stored_item.isdigit():
+#         print(int(stored_item)*10)
+
+
+# ANSWER THE FOLLOWING QUESTIONS: In each case
+# start with a pseudocode.
+
+# Q8. Write a Python program that checks if a given year
+#  is a leap year or not. Use conditional statements 
+# to determine whether the year is divisible by 4 
+# (but not divisible by 100 unless it's also divisible by 400).
+
+# Q9. Create a Python function that takes two integers as 
+# input and returns the larger of the two.
+
+# Q10. Write a Python function that calculates the factorial 
+# of a given non-negative integer using recursion
+#  (a function calling itself) and conditional statements.
+
+# Q11. Develop a Python program that converts a given 
+# temperature in Celsius to Fahrenheit. 
+# Use conditional statements to perform the conversion based on 
+# the user's choice.
+
+# Q12. Create a Python function that checks if a given string 
+# is a palindrome (reads the same forwards and backwards).
