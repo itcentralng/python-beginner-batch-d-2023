@@ -77,7 +77,7 @@
 #else:
  #   print("invalid")
 
-numbers=[1,2,3,4,5,6,7,8,9,10]
+#numbers=[1,2,3,4,5,6,7,8,9,10]
 
 #for number in numbers:
  #   print(number)
@@ -87,8 +87,30 @@ numbers=[1,2,3,4,5,6,7,8,9,10]
   #       print(number)
 
 
-for number in numbers:
-    if number == 3:
+#for number in numbers:
+#    if number == 3:
+
+
+# for number in range(2,16):
+#   if number % 3 == 0 and number % 5 == 0:
+#     print('FizzBuzz')
+#   elif number %3==0:
+#     print("Fizz")
+#   elif number %5==0:
+#     print("Buzz") 
+# else:
+#   print(number)
+
+
+name="ahmad"
+vowels=['a','e','i','o','u']
+for char in name:
+  if char in vowels:
+    print(char.upper())
+
+   
+   
+
 
 
 
