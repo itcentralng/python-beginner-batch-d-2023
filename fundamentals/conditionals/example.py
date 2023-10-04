@@ -213,3 +213,8 @@
 
 # Q12. Create a Python function that checks if a given string 
 # is a palindrome (reads the same forwards and backwards).
+
+num=1
+while num <=10:
+    print(num)
+num +=2
