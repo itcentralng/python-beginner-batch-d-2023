@@ -102,11 +102,42 @@
 #   print(number)
 
 
-name="ahmad"
-vowels=['a','e','i','o','u']
-for char in name:
-  if char.lower in vowels:
-    print(char)
+#name="ahmad"
+#vowels=['a','e','i','o','u']
+#for char in name:
+ # if char.lower in vowels:
+  #  print(char)
+
+user_scores={}
+
+states_and_capitals ={
+    
+    "Abuja": "Abuja",
+    "Kaduna": "Kaduna",
+    "Borno": "Maiduguri",
+
+}
+
+def start_game (username):
+    score=0
+    total_questions= len(states_and_capitals)
+
+    states= list(states_and_capitals.keys())
+    
+
+    for state in states:
+        capital = states_and_capitals[state]
+        user_answer=input("whats the capital of{state}?").strip()
+        if user_answer.lower()== capital.lower():
+            print("correct! you earned 5 points.")
+            scores += 5
+        else:
+            print("Wrong! The correct answer is {capital}. 3 points")
+            score -=3
+            print ("your current score: {score} points")
+
+
+
 
    
    
