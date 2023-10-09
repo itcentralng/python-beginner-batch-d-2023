@@ -1,3 +1,15 @@
-item=[1,2,3,4,5]
-while item <=5:
-   print(item)
+#item=[1,2,3,4,5]
+#while item <=5:
+ #  print(item)
+
+
+
+
+def student(age,name):
+    print("hi my name is {}, i'm {} years old".format(age,name))
+
+student("ahmad", 12)
+    
+
+def list1("name","age","height")
+

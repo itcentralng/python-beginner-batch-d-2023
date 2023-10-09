@@ -218,3 +218,48 @@ num=1
 while num <=10:
     print(num)
 num +=2
+
+state_capitals = {
+    "Alabama": "Montgomery",
+    "Alaska": "Juneau",
+    "Arizona": "Phoenix",
+    "Arkansas": "Little Rock",
+    "California": "Sacramento",
+   
+}
+
+user_data = {}
+
+def play_game(username):
+    score = 0
+    states = list(state_capitals.keys())
+    random.shuffle(states)
+
+    for state in states:
+        capital = state_capitals[state]
+        user_guess = input(f"What is the capital of {state}? ").strip()
+
+        if user_guess.lower() == capital.lower():
+            print("Correct! You earn 5 points.")
+            score += 5
+        else:
+            print(f"Wrong. The correct capital of {state} is {capital}. You lose 3 points.")
+            score -= 3
+
+        print(f"Your current score: {score}\n")
+
+    user_data[username] = score
+    print(f"Game over, {username}! Your final score is: {score}")
+
+    while True:
+        print("Welcome to the State and Capital Game!")
+        username = input("Please enter your name: ")
+        play_game(username)
+
+        play_again = input("Do you want to play again? (yes/no): ").strip().lower()
+        if play_again != "yes":
+            print("Thanks for playing!")
+            break
+
+if __name__ == "__main__":
+    main()
