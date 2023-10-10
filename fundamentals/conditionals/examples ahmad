@@ -5,11 +5,14 @@
 
 
 
-def student(age,name):
-    print("hi my name is {}, i'm {} years old".format(age,name))
+#def student(age,name):
+ #   print("hi my name is {}, i'm {} years old".format(age,name))
 
-student("ahmad", 12)
+#student("ahmad", 12)
     
 
-def list1("name","age","height")
+# Q2 Write a function that takes two lists e.g. list1=["name", "age", "height"]
+# list2 = ["Ahmad Sani", 15, 1.6] and 
+# returns a dictionary e.g. {"name":"Ahmad Sani", "age":15, "height":1.6}
+
 
