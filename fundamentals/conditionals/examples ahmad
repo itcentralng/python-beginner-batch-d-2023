@@ -13,6 +13,36 @@
 
 # Q2 Write a function that takes two lists e.g. list1=["name", "age", "height"]
 # list2 = ["Ahmad Sani", 15, 1.6] and 
-# returns a dictionary e.g. {"name":"Ahmad Sani", "age":15, "height":1.6}
+# returns a dictionary e.g. {"name":"Ahmad Sani", "age":15, "height":1.6
+
+# Q1. Write a State and Capital Game where users are presented with a state
+# for which they provide the capital, if they are correct the program
+# indicates that and if they are wrong the program corrects them and continues
+# until all states are exhausted or the user wants to quit.
+
+# Q2. Write a State and Capital Game where users are presented with a state
+# for which they provide the capital, if they are correct the program
+# indicates that and if they are wrong the program corrects them and continues
+# until all states are exhausted or the user wants to quit.
+# Keep track of users score, if they get it right they get 5 points,
+# if they get it wrong, 3 points are deducted.
+# At the end of the game you show them how their performance and ask them
+# to quit or play again.
+# If they choose to play they again, you restart the game, otherwise you quit.
+# Also, keep track of the user names
+
+# 3. Write a Python program to find the most frequent character in a string.
+
+Mylist2 = [12, 9, 12, 13, 40, 9, 4, 30, 2, 4, 36, 2]
+print("This is Mylist with the duplicates:", Mylist2)
+Mylist2 = list(dict.fromkeys(Mylist2))
+print("This is Mylist without the duplicates:", Mylist2)
+
+print(set(Mylist2))
+
+
+
+
+
 
 

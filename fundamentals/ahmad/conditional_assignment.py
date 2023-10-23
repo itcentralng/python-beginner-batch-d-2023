@@ -129,8 +129,10 @@ def start_game (username):
         capital = states_and_capitals[state]
         user_answer=input("whats the capital of{state}?").strip()
         if user_answer.lower()== capital.lower():
-            print("correct! you earned 5 points.")
             scores += 5
+            print("correct! you earned 5 points.",score)
+            
+            
         else:
             print("Wrong! The correct answer is {capital}. 3 points")
             score -=3
