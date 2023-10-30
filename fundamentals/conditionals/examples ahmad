@@ -33,28 +33,33 @@
 
 # 3. Write a Python program to find the most frequent character in a string.
 
-num1=5
-num2=3
-num3=7
-num4=10
+#reg_name=input("Signup name:")
+#reg_password=input("Signup password:")
+#reg_email=input("Signup email:")
+#reg_phone_no=input("Enter your phone number:")
 
-print(num1+num2+num3+num4)
+#user={"name":reg_name,"password":reg_password,"email":reg_email,"pnone_no":reg_phone_no}
 
-int=6
-int+=4
-print(int)
+#signin_email= input("Enter your email:")
+#signin_password=input("Enter your password:")
 
-print(num1>num2)
-print(num3<num4)
-print(num4==num1)
-print(num3 != num4)
+#if  signin_email.lower == user.get("email") and signin_password == user.get("password")[::6]:
+ #       print("Welcome!",reg_name)
+#elif signin_email.lower!=user.get("email") and signin_password == user.get("password")[::6]:
+ #       print("Incorrect Email")
+#elif signin_email.lower==user.get("email") and signin_password != user.get("password")[::6]:
+ #       print("Incorrect password") 
+#else:
+ #       print("Invalid credentials")
 
-shop=("orange","banana","mango","pineapple")
-print("mango" in shop)
-
-print(num1>num2 and num3<num4)
-print(num4==num1 or num3 !=num4)
-
+age= input("what is your age: ")
+age= int(age)
+if age > 39:
+ print("over age")
+elif age < 18:
+  print("under age")
+else: 
+    print("proper age")
 
 
 
